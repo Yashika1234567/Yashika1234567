@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Yashika - Skills</title>
+    <style>
+        /* Add your styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9; /* Light background color */
+            color: #333; /* Dark text color */
+        }
+
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        /* Skills section styles */
+        .skills__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .skills__subtitle {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #007bff; /* Formal blue color */
+        }
+
+        .skills__text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .skills__data {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .skills__names {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .skills__icon {
+            font-size: 2rem;
+            margin-right: 5px;
+            color: #333; /* Dark text color */
+        }
+
+        .skills__name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333; /* Dark text color */
+        }
+
+        .skills__bar {
+            width: 100%;
+            height: 10px;
+            background-color: #ddd; /* Light gray background color */
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .skills__html {
+            background-color: #e44d26; /* HTML color */
+        }
+
+        .skills__css {
+            background-color: #2965f1; /* CSS color */
+        }
+
+        .skills__js {
+            background-color: #f0db4f; /* JavaScript color */
+        }
+
+        .skills__ux {
+            background-color: #4caf50; /* UX/UI color */
+        }
+
+        .skills__percentage {
+            font-size: 1.2rem;
+            color: #555; /* Dark text color */
+        }
+
+        .skills__img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        nav ul li{
+            list-style-type: none;
+            margin:0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:rgb(27, 32, 137);
+        }
+        nav ul li a :hover{
+            color:rgb(0, 0, 61);
+            font-size: 1.04rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">    
+            <nav>   
+            <div>
+                <h2 class="skills__subtitle">Technical Skills</h2>
+                <ul class="skills__text">
+                    <li><a>Programming Languages: Java, C, C++, Python</a></li>
+                    <li><a>Web Development: HTML, CSS, JavaScript, PHP</a></li>
+                    <li><a>Data Structures and Algorithms: Proficient in DSA using C++</a></li>
+                    <li><a>Software Development Management</a></li>
+                    <li><a>Creative Writing</a></li>
+                </ul>
+            </div>
+        </nav>   
+            
+            <div>              
+                <img src="skills.png" alt="Skills Image" class="skills__img">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
