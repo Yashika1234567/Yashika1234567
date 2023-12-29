@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+    <title>Yashika-Devloper Portfolio</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:rgb(18, 13, 49);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: hwb(257 10% 72% / 0.433);
+        }
+        nav ul{
+            display:flex;
+            justify-content:center;
+        }
+        nav ul li {
+            list-style-type: none;
+            margin:0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+        }
+        nav ul li a:hover {
+            color:rgb(196, 196, 244);
+            font-size: 1.04rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display:flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            
+        }
+        .firstsection >div{
+            width:30%;
+        }
+        .leftsection{
+            
+            width:50%;
+        }
+        
+        .rightsection{
+            width:80%;
+        }
+        .purple{
+            color:#6c63ff;
+        }
+        #element{
+            color:#6c63ff;
+        }
+        .intro-section {
+            padding: 100px ;
+            text-align: center;
+            background-color: #2b1736;
+            color: white;
+            height: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header> 
+        <nav>
+        <div class="left">Yashika's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+
+            </ul></div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,my name is <span class="purple">Yashika</span><br>
+                    <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="developer.png" alt="">
+            </div>
+
+        </section>
+        <section class="intro-section">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my skills, projects, and more. Let's create something amazing together!</p>
+        </section>
+        
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!--for animation-->
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>Web Developer','Knowledge in AI and ML', 'Software developer (in c++)',],
+          typeSpeed: 50,
+        });
+      </script>
+      <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>
