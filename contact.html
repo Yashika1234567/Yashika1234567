@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Yashika - Contact</title>
+    <style>
+        /* Add your styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4; /* Lighter background color */
+            background-image: url('https://source.unsplash.com/1200x800/?social-media,office');
+            background-size: cover;
+            background-position: center;
+            color: #111;
+        }
+
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #c10d0d;
+        }
+
+        /* Contact styles */
+        .contact__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contact__input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact__button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .contact__button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+            <input type="text" placeholder="Your Name" class="contact__input" id="nameInput">
+            <input type="email" placeholder="Your Email" class="contact__input" id="emailInput">
+            <textarea placeholder="Your Message" rows="5" class="contact__input" id="messageInput"></textarea>
+            <button onclick="sendEmail()" class="contact__button button">Send Message</button>
+        </div>
+    </section>
+
+    <script>
+        function sendEmail() {
+            var name = document.getElementById('nameInput').value;
+            var email = document.getElementById('emailInput').value;
+            var message = document.getElementById('messageInput').value;
+
+            var subject = encodeURIComponent('Inquiry from Social Media Agency Portfolio');
+            var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+
+            window.location.href = 'mailto:bishty2005@gmail.com?subject=' + subject + '&body=' + body;
+        }
+    </script>
+</body>
+</html>
