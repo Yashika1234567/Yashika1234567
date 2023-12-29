@@ -29,13 +29,8 @@ npm install
 
 ## Running the Website
 
-To run the website, you will need to start the development server. You can do this by running the following command in your terminal:
+To run the website, you will need to start the development server. Use index.html as the main file. It includes various other files such as home.html,about.html,skills.html,project.html and contact.html.
 
-```
-npm start
-```
-
-The development server will start on port 3000. You can access the website by visiting http://localhost:3000 in your browser.
 
 ## Code Overview
 
